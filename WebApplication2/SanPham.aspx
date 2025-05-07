@@ -47,18 +47,19 @@
             <div class="container">
                 <a class="btn btn-action  text-xl-left" style="font-size: 20pt;" data-toggle="collapse"
                     href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Danh mục nhóm </a>
+                    Danh mục
+                </a>
                 <div class="collapse show" id="collapseExample">
                     <div>
                         <ul class="list-group danhmuc" >
-                            <li class="list-group-item border-0" ><a class="a text-dark" runat="server" id="filAll" onserverclick="filAll_Click" href="#">ALL</a></li>
-                            <li class="list-group-item border-0"><a class="a text-secondary" runat="server" id="filAdidas" onserverclick="filAdidas_Click" href="#">Kem</a></li>
-                            <li class="list-group-item border-0"><a class="a text-info" runat="server" id="filJordan" onserverclick="filJordan_Click" href="#">Trà sữa trái cây</a></li>
-                            <li class="list-group-item border-0"><a class="a text-primary" runat="server" id="filNike" onserverclick="filNike_Click" href="#">Trà sữa rau củ</a></li>
-                            <li class="list-group-item border-0"><a class="a text-success" runat="server" id="filAcis" onserverclick="filAcis_Click" href="#">Trà nguyên chất</a></li>
-                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filPuma" onserverclick="filPuma_Click" href="#">Trà sữa sáng tạo</a></li>
-                            <li class="list-group-item border-0"><a class="a text-body" runat="server" id="filBitis" onserverclick="filBitis_ServerClick" href="#">Trà sữa đá xay</a></li>
-                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filConverse" onserverclick="filConverse_ServerClick" href="#">Trà sữa</a></li>
+                            <li class="list-group-item border-0" ><a class="a text-dark" runat="server" id="filAll" onserverclick="filAll_Click" href="#">TẤT CẢ</a></li>
+                            <li class="list-group-item border-0"><a class="a text-secondary" runat="server" id="filAdidas" onserverclick="filAdidas_Click" href="#">CPU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-info" runat="server" id="filJordan" onserverclick="filJordan_Click" href="#">MAINBOARD</a></li>
+                            <li class="list-group-item border-0"><a class="a text-primary" runat="server" id="filNike" onserverclick="filNike_Click" href="#">GPU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-success" runat="server" id="filAcis" onserverclick="filAcis_Click" href="#">PSU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filPuma" onserverclick="filPuma_Click" href="#">RAM</a></li>
+                            <li class="list-group-item border-0"><a class="a text-body" runat="server" id="filBitis" onserverclick="filBitis_ServerClick" href="#">LAPTOP</a></li>
+                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filConverse" onserverclick="filConverse_ServerClick" href="#">KEYBOARD</a></li>
                         </ul>
                     </div>
                 </div>

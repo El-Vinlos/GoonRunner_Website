@@ -11,7 +11,7 @@ namespace WebApplication2
 {
     public partial class ChiTietSanPham : System.Web.UI.Page
     {
-        String Str = "Data Source=.;Initial Catalog=QLBANGIAY;Integrated Security=True;";
+        String Str = "data source=.\\SQLEXPRESS;initial catalog=QLBANLK;integrated security=True;trustservercertificate=True";
         SqlConnection conn;
         DataTable dt;
         String masp = "";

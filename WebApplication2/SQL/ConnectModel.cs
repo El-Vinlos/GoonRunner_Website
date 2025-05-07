@@ -17,7 +17,7 @@ namespace System
         }
         public void Initializing()
         {
-            this.ConnectionStrings = "Data Source=.;Initial Catalog=QLBANTRASUA;Integrated Security=True";
+            this.ConnectionStrings = "data source=.\\SQLEXPRESS;initial catalog=QLBANLK;integrated security=True;trustservercertificate=True";
             CreateConnection();
         }
         public void Initializing(String connectionStringsName)

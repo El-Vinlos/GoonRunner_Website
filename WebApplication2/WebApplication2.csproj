@@ -95,7 +95,19 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css_local\Main_Page.css" />
+    <Content Include="css_local\Site1.Master.css" />
+    <Content Include="font\JetBrainsMono-Bold.ttf" />
     <Content Include="Handle\ActionMethod.aspx" />
+    <Content Include="img\asus Vivobook.png" />
+    <Content Include="img\banner_left.jpg" />
+    <Content Include="img\banner_right.jpg" />
+    <Content Include="img\bao_sale_mua_he.png" />
+    <Content Include="img\legion_pro_7.png" />
+    <Content Include="img\thinkpad.png" />
+    <Content Include="img\thu_cu_doi_moi_beach.png" />
+    <Content Include="img\thu_cu_doi_moi_space.png" />
+    <Content Include="img\macbook pro 14 m2.png" />
     <Content Include="Lib\bootstrap.min.css" />
     <Content Include="Lib\bootstrap.min.js" />
     <Content Include="Lib\bootstrap_bundle.js" />
@@ -237,6 +249,8 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="svg\GoonRunner-Headonly.svg" />
+    <Content Include="svg\GoonRunner.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -344,6 +358,9 @@
     <Compile Include="SQL\EnforceModel.cs" />
     <Compile Include="SQL\LINK.cs" />
     <Compile Include="SQL\QueryModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HinhSP\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

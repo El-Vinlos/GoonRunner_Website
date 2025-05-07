@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2 {
-    
-    
-    public partial class Site1 {
-        
+namespace WebApplication2
+{
+
+
+    public partial class Site1
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Lnkql control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton Lnkql;
-        
+
         /// <summary>
         /// searchtb control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText searchtb;
-        
+
         /// <summary>
         /// search control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlButton search;
-        
+
         /// <summary>
         /// loginForm control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginForm;
-        
+
         /// <summary>
         /// loginName control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginName;
-        
+
         /// <summary>
         /// loginDangXuat control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor loginDangXuat;
-        
+
         /// <summary>
         /// loginButton control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlButton loginButton;
-        
+
         /// <summary>
         /// countShopPay control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl countShopPay;
-        
+
         /// <summary>
         /// Admin control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Admin;
-        
+
         /// <summary>
         /// Normal control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Normal;
-        
+
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
+
         /// <summary>
         /// txtUserOK control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUserOK;
-        
+
         /// <summary>
         /// txtPassOK control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassOK;
-        
+
         /// <summary>
         /// btnLoginOK control.
         /// </summary>

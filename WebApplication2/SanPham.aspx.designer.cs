@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2 {
-    
-    
-    public partial class SanPham {
-        
+namespace WebApplication2
+{
+
+
+    public partial class SanPham
+    {
+
         /// <summary>
         /// filAll control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filAll;
-        
+
         /// <summary>
         /// filAdidas control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filAdidas;
-        
+
         /// <summary>
         /// filJordan control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filJordan;
-        
+
         /// <summary>
         /// filNike control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filNike;
-        
+
         /// <summary>
         /// filAcis control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filAcis;
-        
+
         /// <summary>
         /// filPuma control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filPuma;
-        
+
         /// <summary>
         /// filBitis control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filBitis;
-        
+
         /// <summary>
         /// filConverse control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor filConverse;
-        
+
         /// <summary>
         /// DataList1 control.
         /// </summary>
@@ -92,5 +94,19 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataList1;
+
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication2.Site1 Master
+        {
+            get
+            {
+                return ((WebApplication2.Site1)(base.Master));
+            }
+        }
     }
 }
