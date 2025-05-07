@@ -11,7 +11,7 @@ namespace System
     public class LINK
     {
         //string strConn = WebConfigurationManager.ConnectionStrings["QLBANGIAYConnectionString"].ConnectionString;
-        string strConn = "Data Source=.;Initial Catalog=QLBANTRASUA;Integrated Security=True";
+        string strConn = "data source=.\\SQLEXPRESS;initial catalog=QLBANLK;integrated security=True;trustservercertificate=True";
         public SqlConnection Connect()
         {
             SqlConnection conn = new SqlConnection(strConn);

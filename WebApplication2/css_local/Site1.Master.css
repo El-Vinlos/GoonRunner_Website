@@ -1,0 +1,54 @@
+/* Add this CSS to your css_local/Site1.Master.css file */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+form#form1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer_background {
+    margin-top: auto;
+    width: 100%;
+    background-color: #D53E3E; 
+}
+
+.footer_background footer {
+    padding: 20px 0;
+}
+
+.footer_background footer a {
+    text-decoration: none;
+    position: relative;
+}
+a.footer-text {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.footer-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #3C3836;
+    transition: width 0.3s ease;
+}
+
+a.footer-text:hover::after {
+    width: 100%;
+}
+
+*{
+    font-family: 'JetBrains Mono', sans-serif, 'Roboto Slab', serif;
+}

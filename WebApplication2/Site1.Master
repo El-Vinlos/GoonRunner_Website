@@ -6,7 +6,7 @@
 <head runat="server">   
     <title>Trang chủ</title>
     
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="icon" href="svg/GoonRunner-Headonly.svg" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -20,6 +20,7 @@
     <script src="Lib/jquery-3.3.1.min.js" type="text/javascript"></script>
     <link href="Lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Lib/Style.css" rel="stylesheet" type="text/css" />
+    <link href="css_local/Site1.Master.css" rel="stylesheet" type="text/css" />
     <script src="Lib/bootstrap.min.js" type="text/javascript"></script>
     <script src="Lib/fontawesome-all.min.js" type="text/javascript"></script>
     <script src="Lib/bootstrap_bundle.js" type="text/javascript"></script>
@@ -29,31 +30,31 @@
 <body>
     <form id="form1" runat="server">
     <div class="container">
-        <nav class="navbar navbar-expand-sm bg-white" style="height:55px">
+        <nav class="navbar navbar-expand-sm bg-red" style="height:55px">
                 <!--logo-->
                 <a class="navbar-brand" href="Main_Page.aspx">
-                  <img src="img/logo.png" alt="Avatar Logo" style="width:70px; height:50px" class="rounded-pill"> 
+                  <img src="svg/GoonRunner.svg" alt="Avatar Logo" style="width:200px; height:200px"> 
                 </a>
                   
             <!--menu-->               
              <ul class="nav ms-auto my-2">
               <li class="nav-item">
-                <a class="nav-link active" href="Main_Page.aspx" style="color:#FC5759">TRANG CHỦ</a>
+                <a class="nav-link active" href="Main_Page.aspx" style="color:#D53E3E">TRANG CHỦ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Gioithieu.aspx" style="color:#FC5759">GIỚI THIỆU</a>
+                <a class="nav-link" href="Gioithieu.aspx" style="color:#D53E3E">GIỚI THIỆU</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="SanPham.aspx" style="color:#FC5759">SẢN PHẨM</a>
+                <a class="nav-link me-3" href="SanPham.aspx" style="color:#D53E3E">SẢN PHẨM</a>
               </li>
               <li class="nav-item" style="margin-top: 8px">
                 <asp:LinkButton ID="Lnkql" runat="server" CssClass="me-3" PostBackUrl="QLSP.aspx" Text="DANH MỤC QUẢN LÝ" ForeColor="#FC5759" />
               </li>
               <li class="nav-item">
-                <input runat="server" id="searchtb" class="form-control col me-2" type="text" placeholder="Search..">
+                <input runat="server" id="searchtb" class="form-control col me-2" type="text" placeholder="Bạn cần tìm gì?"></input>
               </li>
               <li class="nav-item me-2">
-                  <Button runat="server" ID="search" class="btn col" type="submit" style="background-color:#FC5759" onserverclick="Search_Click"><i class="fa-solid fa-magnifying-glass" style="color:white"></i></Button>
+                  <Button runat="server" ID="search" class="btn col" type="submit" style="background-color:#D53E3E" onserverclick="Search_Click"><i class="fa-solid fa-magnifying-glass" style="color:white"></i></Button>
                 </li>           
                <li class="nav-item me-2" style="margin-top: 8px">               
                    <div id="loginForm" runat="server">Xin Chào,&nbsp;<span runat="server" id="loginName" style="font-weight: bold;">admin</span>&nbsp;&nbsp;
@@ -70,7 +71,7 @@
               </li>  
            </ul>                                                                                      
        </nav>
-        <hr style="border:2px solid #ff4d4f"/>
+        <hr style="border:2px solid #D53E3E"/>
     </div>
     <div class="container">
     <div class="row">
@@ -105,64 +106,58 @@
                     Password: <asp:TextBox ID="txtPassOK" CssClass="form-control" Placeholder="Password" TextMode="Password" runat="server"></asp:TextBox><br />
                   </div>
                   <div class="modal-footer border-0">
-                    <a href="DangKy.aspx"" class="btn btn-success" >Đăng ký</a>
+                    <a href="DangKy.aspx" class="btn btn-success" >Đăng ký</a>
                     <asp:Button ID="btnLoginOK" runat="server" CssClass="btn btn-danger" 
                           Text="Đăng nhập" onclick="btnLoginOK_Click"></asp:Button>
                   </div>
                 </div>
               </div>
             </div>
-
-<div class="container-fluid" id="bot">
-<div class="container text-white bg-black">
-    <br />
-    <br />
-    <div class="row">
-        <div class="col-1">
-        </div>
-        <div class="col-2">
-            <h4>Cửa hàng</h4>
-            <p>Tài khoản của tôi</p>
-            <p>Thông tin mới nhất</p>
-            <p>Hàng mua</p>
-        </div>
-        <div class="col-3">
-            <h4>Đường dẫn nhanh</h4>
-            <a href="Gioithieu.aspx" style="color:white"><p>Về chúng tôi</p></a>
-            <a href="SanPham.aspx" style="color:white"><p>Mua đồ Online</p></a>
-            <p>Câu hỏi thường gặp</p>
-        </div>
-        <div class="col-3">
-            <h4>Dịch vụ</h4>
-            <p>Hỗ trợ khách hàng</p>
-            <p>Vận chuyển</p>
-            <p>Đóng gói sản phẩm</p>
-            <p>Đơn đặt hàng</p>
-        </div>
-        <div class="col-3">
-            <h4>Liên lạc với chúng tôi</h4>
-            <p>Số điện thoại:0902984407</p>
-        </div>
+        
+        
+        <!--footer-->
+<div class="footer_background">
+    <div class="container text-white">
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h5>VỀ GOONRUNNNER</h5>
+                    <p><a class="footer-text" href="Gioithieu.aspx">Giới thiệu</a></p>
+                    <p><a class="footer-text" href="#">Tuyển dụng</a></p>
+                    <p><a class="footer-text" href="#">Liên hệ</a></p> 
+                </div>
+                <div class="col">
+                    <h5>CHÍNH SÁCH</h5>
+                    <p><a class="footer-text" href="#">Chính sách bảo hành</a></p>
+                    <p><a class="footer-text" href="#">Chính sách giao hàng</a></p>
+                    <p><a class="footer-text" href="#">Chính sách bảo mật</a></p> 
+                    </div>
+                <div class="col">
+                    <h5>THÔNG TIN</h5>
+                    <p><a class="footer-text" href="#">Hệ thống cửa hàng</a></p>
+                    <p><a class="footer-text" href="#">Hướng dẫn mua hàng</a></p>
+                    <p><a class="footer-text" href="#">Hướng dẫn thanh toán</a></p>
+                    <p><a class="footer-text" href="#">Hướng dẫn trả góp</a></p>
+                    <p><a class="footer-text" href="#">Tra cứu địa chỉ bảo hành</a></p>
+                    <p><a class="footer-text" href="SanPham.aspx">Build PC</a></p>
+                </div>
+                <div class="col">
+                    <h5>TỔNG ĐÀI HỖ TRỢ</h5>
+                    <p>Mua hàng: <a href="tel:0902984407">0902984407</a></p>
+                    <p>Bảo hành: <a href="tel:0902984407">0902984407</a></p>
+                    <p>Khiếu nại: <a href="tel:0902984407">0902984407</a></p>
+                    <p>Email: <a href="mailto:cskh@goonrunner.com">cskh@goonrunner.com</a></p>
+                </div>
+            </div>
+            <hr class="bg-black" />
+            <h5 class="font-weight-bold">
+                KẾT NỐI VỚI CHÚNG TÔI&nbsp;
+                <a class="footer-icon" href="https://www.facebook.com/photo/?fbid=520171945192851&set=pob.100016001495292" style="color: #fff"><i class="fa-brands fa-facebook"></i></a>&nbsp;
+                <a class="footer-icon" href="https://www.twitter.com" style="color: #fff"><i class="fab fa-twitter-square"></i></a>&nbsp;
+                <a class="footer-icon" href="https://xbox.com" style="color: #fff"><i class="fab fa-xbox"></i></a>
+            </h5> 
+        </footer>
     </div>
-    <br />
-    <div class="row ">
-        <div class="col-2">
-            <p>Chính sách Cookie</p>
-        </div>
-        <div class="col-2">
-            <p>Chính sách bảo mật</p>
-        </div>
-        <div class="col-3">
-            <p>Các điều khoản và điều kiện</p>
-        </div>
-    </div>
-    <!--footer-->
-    <hr class="bg-white"/>
-    <footer>
-         <p class="text-center ">&copy; Copyright 2024 - Yummy.com </p>
-    </footer>
-    <br />
-</div>
 </div>
 </form>
 </body>
