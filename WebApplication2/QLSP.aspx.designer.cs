@@ -130,5 +130,19 @@ namespace WebApplication2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gdvSP;
+
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebApplication2.Site1 Master
+        {
+            get
+            {
+                return ((WebApplication2.Site1)(base.Master));
+            }
+        }
     }
 }

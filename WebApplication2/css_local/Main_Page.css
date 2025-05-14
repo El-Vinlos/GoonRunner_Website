@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    font-family: 'JetBrains Mono', monospace, 'Roboto Mono', monospace;
+}
+
 .side-banner {
     position: fixed;
     top: 100px;
@@ -10,12 +16,12 @@
 .right-banner {
     right: 20px;
 }
+
 .banner-img {
     width: 100%;
-    transition: transform 0.3s;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
     .side-banner {
         display: none;
     }

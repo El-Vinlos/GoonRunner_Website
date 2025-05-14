@@ -19,31 +19,6 @@ namespace WebApplication2
             DataList1.DataSource = dt;
             DataList1.DataBind();
         }
-        protected void Adidas_Click(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH04");
-            DataList1.DataBind();
-        }
-        protected void Jordan_Click(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH01");
-            DataList1.DataBind();
-        }
-        protected void Nike_Click(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH05");
-            DataList1.DataBind();
-        }
-        protected void Asics_Click(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH03");
-            DataList1.DataBind();
-        }
-        protected void Puma_Click(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH02");
-            DataList1.DataBind();
-        }
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
@@ -78,18 +53,6 @@ namespace WebApplication2
             }
             // Trick
             Response.Redirect(Page.Request.Url.ToString(), true);
-        }
-
-        protected void Bitis_ServerClick(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH06");
-            DataList1.DataBind();
-        }
-
-        protected void Converse_ServerClick(object sender, EventArgs e)
-        {
-            DataList1.DataSource = conn.SelectTable("SANPHAM", "MaHang", "MH07");
-            DataList1.DataBind();
         }
 
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)

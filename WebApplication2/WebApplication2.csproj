@@ -99,6 +99,9 @@
     <Content Include="css_local\Site1.Master.css" />
     <Content Include="font\JetBrainsMono-Bold.ttf" />
     <Content Include="Handle\ActionMethod.aspx" />
+    <Content Include="HinhSP\amd-radeon-rx-7900xt.jpg" />
+    <Content Include="HinhSP\amd-ryzen5-5600x.jpg" />
+    <Content Include="HinhSP\amd-ryzen9-7900x.jpg" />
     <Content Include="img\asus Vivobook.png" />
     <Content Include="img\banner_left.jpg" />
     <Content Include="img\banner_right.jpg" />
@@ -358,9 +361,6 @@
     <Compile Include="SQL\EnforceModel.cs" />
     <Compile Include="SQL\LINK.cs" />
     <Compile Include="SQL\QueryModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="HinhSP\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
