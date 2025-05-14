@@ -82,7 +82,7 @@
 
     <div class="container my-3 d-flex justify-content-center">
         <div class="row">
-<!--card 1-->    
+            <!--card 1-->    
             <div class="card mx-4" style="border: 1px solid black; width:280px; height:460px; position: relative;">
                 <a href="ChiTietSanPham.aspx?masp=SP02" style="text-decoration: none;">
                     <img class="card-img-top" src="img/macbook pro 14 m2.png" alt="Card image" style="width:100%; margin-top: 10px">
@@ -97,7 +97,7 @@
                     height: 50px;">MacBook Pro 14 M2 Pro 10CPU 16GPU 16GB 512GB Silver - MPHH3SA/A</p>
                     </a>
                     
-                    <div class="specs-list my-2 text-muted" style="font-size: 0.85rem;">
+                    <div class="specs-list my-2 text-muted" style="font-size: 0.7rem;">
                         <div class="d-flex justify-content-between">
                             <div><i class="fas fa-microchip me-1"></i> M2 10-CORE </div>
                             <div><i class="fas fa-memory me-1"></i> 16 GB</div>
@@ -126,7 +126,7 @@
                       height: 50px;">Laptop Lenovo ThinkPad X1 2-in-1 Gen 9 21KE004MVN</p>
                     </a>
                     
-                    <div class="specs-list my-2 text-muted" style="font-size: 0.85rem;">
+                    <div class="specs-list my-2 text-muted" style="font-size: 0.7rem;">
                         <div class="d-flex justify-content-between">
                             <div><i class="fas fa-microchip me-1"></i> Ultra 7 155U</div>
                             <div><i class="fas fa-memory me-1"></i> 32 GB</div>
@@ -155,7 +155,7 @@
                       height: 50px;">Laptop ASUS Vivobook S 14 S5406SA PP059WS</p>
                     </a>
                     
-                    <div class="specs-list my-2 text-muted" style="font-size: 0.85rem;">
+                    <div class="specs-list my-2 text-muted" style="font-size: 0.7rem;">
                         <div class="d-flex justify-content-between">
                             <div><i class="fas fa-microchip me-1"></i> Ultra 7 258V </div>
                             <div><i class="fas fa-memory me-1"></i> 32 GB</div>
@@ -184,7 +184,7 @@
                       height: 50px;">Laptop gaming Lenovo Legion Pro 7 16IAX10H 83F5008WVN</p>
                     </a>
                     
-                    <div class="specs-list my-2 text-muted" style="font-size: 0.85rem;">
+                    <div class="specs-list my-2 text-muted" style="font-size: 0.7rem;">
                         <div class="d-flex justify-content-between">
                             <div><i class="fas fa-microchip me-1"></i> Ultra 9 275HX </div>
                             <div><i class="fas fa-memory me-1"></i> 32 GB</div>
@@ -194,37 +194,105 @@
                             <div><i class="fas fa-desktop me-1"></i> 16" WQXGA OLED</div>
                         </div>
                     </div>
-                        <p style="color:#D53E3E;  font-size:1.5rem; position: absolute; bottom: 0">98,990,000₫</p>
+                    <p style="color:#D53E3E;  font-size:1.5rem; position: absolute; bottom: 0">98,990,000₫</p>
                 </div>
             </div> 
         </div>
-</div>
-    
-    <!--5hinh 1word-->
-    <div class="container">
-        <div style="display:block">
-            <img class="" src="img/Trasuavatra.jpg"  alt="Card image" style="width:33%; height:400px; display: inline-block;"/>
-            <img class="" src="img/MatchaTra.jpg"  alt="Card image" style="width:67%; height:400px; float: right"/>
-        </div>
-        <div style="display:block">
-            <div style="width:34%; float: right">
-                <img src="img/Mua1tang1.jpg"  alt="Card image" style="width:100%"/>
-                <a href="#" style="text-decoration: none; font-family: DejaVuSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h3>Đón Cận Hè Cùng Trà Sữa Dâu</h3></a>
-            </div>
-            <div style="width:33%; float: right">
-                <img src="img/Kem.jpg"  alt="Card image" style="width:100%"/>
-                <a href="#" style="text-decoration: none; font-family: DejaVuSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h3>Kem Lạnh Cho Hè Nóng Nực</h3></a>
-            </div>  
-            <div style="background-color:blanchedalmond; width:33%; height:400px;">
-                <h1 style="color:red; margin-left:43px; padding-top:25px; font-family: DejaVuSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Ưu Đãi</h1>
-                <h3 style="margin-left:22px; font-family: Arial, Helvetica, sans-serif;">Khám phá ngay các chương trình ưu đãi cực hấp dẫn của Yummy trong tháng này!</h3>
-                <hr style="border:1px solid black; width:50%; margin-left:22px" />
-                <h4 style="margin-left:22px; margin-top:20px; font-family: Arial, Helvetica, sans-serif;">Chào mừng bạn đến với trà sữa Yummy, hãy cùng khám phá những khuyến mãi và ưu đãi của chúng tôi trong tháng này nhé.</h4>
-            </div>               
-        </div>
     </div>
     
-   <!--hotsale-->
+    <!-- AMD Game/Bundle Section -->
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="fw-bold" style="color: #002060;">AMD COMBO SIÊU ĐÃ</h2>
+                    <a href="#" class="text-decoration-none" style="color: #D53E3E;">See More <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">Bao SSD</span>
+                        <img src="HinhSP/amd-ryzen5-5600x.jpg" class="card-img-top p-4" alt="AMD Ryzen 5 5600X">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 5 5600X - Ryzen 5 9000 Series</h5>
+                        <p class="text-danger">Giảm 2 triệu đồng khi mua kèm màn hình LG</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-danger">Giảm 21%</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                                <span class="text-decoration-line-through text-muted">$279.00</span>
+                                <span class="fw-bold fs-4">$219<sup>.99</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <asp:Button runat="server" ID="btnAddToCart1" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                    </div>
+                </div>
+            </div>
+        
+            <%-- SP 2 --%>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;"></span>
+                        <img src="HinhSP/amd-radeon-rx-7900xt.jpg" class="card-img-top p-4" alt="AMD Radeon RX 7900 XT">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">SAPPHIRE Radeon RX 7900 XT</h5>
+                        <p class="text-danger">Nhận Monster Hunter Wilds khi mua, Ưu đãi có hạn</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-danger">Giảm 38%</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                                <span class="text-decoration-line-through text-muted">$548.99</span>
+                                <span class="fw-bold fs-4">$335<sup>.26</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <asp:Button runat="server" ID="btnAddToCart2" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">BAO SSD</span>
+                        <img src="HinhSP/amd-ryzen9-7900x.jpg" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 9 7900X - Zen 4 12-Core 4.7 GHz - Socket AM5</h5>
+                        <p class="text-danger">Giảm 2 triệu đồng khi mua kèm màn hình LG</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="badge bg-danger">Giảm 38%</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                                <span class="text-decoration-line-through text-muted">$548.99</span>
+                                <span class="fw-bold fs-4">$335<sup>.26</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <asp:Button runat="server" ID="btnAddToCart3" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!--hotsale-->
     <div class="col-xs-12 my-3 ">
         <div class="container">
             <h2 style="font-family:JetBrainsMono-Bold; color:#D53E3E">
@@ -238,7 +306,7 @@
             <div class="col-12">
                 <div class="d-flex flex-wrap justify-content-center">
                     <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" RepeatDirection="Horizontal" DataKeyField="MaSP" ClientIDMode="Static" 
-                        onselectedindexchanged="DataList1_SelectedIndexChanged">
+                                  onselectedindexchanged="DataList1_SelectedIndexChanged">
                         <ItemTemplate>
                             <div class="card" style="margin-right: 20px; margin-bottom: 20px;">
                                 <div class="d_effect" style="width: 100%; height: 320px;">
@@ -250,7 +318,7 @@
                                 <div class="card-body" style="width: 100%; height: 150px;">
                                     <h3>
                                         <asp:LinkButton ID="LinkButton1" PostBackUrl='<%# Eval("MaSP","ChiTietSanPham.aspx?masp={0}") %>'
-                                            Text="<%# Bind('TenSP') %>" runat="server"></asp:LinkButton>
+                                                        Text="<%# Bind('TenSP') %>" runat="server"></asp:LinkButton>
                                     </h3>
                                 </div>
                                 <div class="card-footer">
@@ -259,8 +327,8 @@
                                     <button class="btn btn-danger" style="border-radius: 0; height: 38px; margin-right: -5px;">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
-                                        <asp:Button ID="btnThem" CssClass="btn btn-outline-danger" Style="border-radius: 0;"
-                                        runat="server" Text="Thêm vào giỏ hàng" OnClick="btnThem_Click"/>    
+                                    <asp:Button ID="btnThem" CssClass="btn btn-outline-danger" Style="border-radius: 0;"
+                                                runat="server" Text="Thêm vào giỏ hàng" OnClick="btnThem_Click"/>    
                                 </div>
                             </div>
                         </ItemTemplate>

@@ -1,4 +1,7 @@
-/* Add this CSS to your css_local/Site1.Master.css file */
+
+*{
+    font-family: 'JetBrains Mono', sans-serif, 'Roboto Slab', serif;
+}
 
 html, body {
     height: 100%;
@@ -29,6 +32,7 @@ form#form1 {
     text-decoration: none;
     position: relative;
 }
+
 a.footer-text {
     text-decoration: none;
     color: #FFFFFF;
@@ -47,8 +51,4 @@ a.footer-text::after {
 
 a.footer-text:hover::after {
     width: 100%;
-}
-
-*{
-    font-family: 'JetBrains Mono', sans-serif, 'Roboto Slab', serif;
 }
