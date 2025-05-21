@@ -100,8 +100,8 @@
     <Content Include="font\JetBrainsMono-Bold.ttf" />
     <Content Include="Handle\ActionMethod.aspx" />
     <Content Include="HinhSP\amd-radeon-rx-7900xt.jpg" />
-    <Content Include="HinhSP\amd-ryzen5-5600x.jpg" />
-    <Content Include="HinhSP\amd-ryzen9-7900x.jpg" />
+    <Content Include="HinhSP\amd-ryzen5-5600.jpg" />
+    <Content Include="HinhSP\amd-ryzen9-7900.jpg" />
     <Content Include="img\asus Vivobook.png" />
     <Content Include="img\banner_left.jpg" />
     <Content Include="img\banner_right.jpg" />

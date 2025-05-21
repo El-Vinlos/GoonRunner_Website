@@ -206,29 +206,31 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h2 class="fw-bold" style="color: #002060;">AMD COMBO SIÊU ĐÃ</h2>
-                    <a href="#" class="text-decoration-none" style="color: #D53E3E;">See More <i class="fas fa-angle-right"></i></a>
+                    <a href="#" class="text-decoration-none" style="color: #D53E3E;">Xem Thêm <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
     
         <div class="row">
-            <!-- Product 1 -->
+            <%-- SP 1 --%>
             <div class="col-md-4 mb-3">
                 <div class="card h-100">
                     <div class="position-relative">
                         <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">Bao SSD</span>
-                        <img src="HinhSP/amd-ryzen5-5600x.jpg" class="card-img-top p-4" alt="AMD Ryzen 5 5600X">
+                        <img src="HinhSP/amd-ryzen5-5600.jpg" height="300px" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">AMD Ryzen 5 5600X - Ryzen 5 9000 Series</h5>
+                        <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            AMD Ryzen 5 5600X - Ryzen 5 9000 Series
+                        </h5>
                         <p class="text-danger">Giảm 2 triệu đồng khi mua kèm màn hình LG</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <span class="badge bg-danger">Giảm 21%</span>
+                                <span class="badge bg-danger">Giảm 2%</span>
                             </div>
                             <div class="d-flex flex-column align-items-end">
-                                <span class="text-decoration-line-through text-muted">$279.00</span>
-                                <span class="fw-bold fs-4">$219<sup>.99</sup></span>
+                                <span class="text-decoration-line-through text-muted">4,590,000₫</span>
+                                <span class="fw-bold fs-4">4,490,000₫</span>
                             </div>
                         </div>
                     </div>
@@ -243,18 +245,20 @@
                 <div class="card h-100">
                     <div class="position-relative">
                         <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;"></span>
-                        <img src="HinhSP/amd-radeon-rx-7900xt.jpg" class="card-img-top p-4" alt="AMD Radeon RX 7900 XT">
+                        <img src="HinhSP/amd-radeon-rx-7900xt.jpg" height="300" class="card-img-top p-4" alt="AMD Radeon RX 7900 XT">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">SAPPHIRE Radeon RX 7900 XT</h5>
+                        <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            SAPPHIRE Radeon RX 7900 XT
+                        </h5>
                         <p class="text-danger">Nhận Monster Hunter Wilds khi mua, Ưu đãi có hạn</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <span class="badge bg-danger">Giảm 38%</span>
+                                <span class="badge bg-danger">Giảm 20%</span>
                             </div>
                             <div class="d-flex flex-column align-items-end">
-                                <span class="text-decoration-line-through text-muted">$548.99</span>
-                                <span class="fw-bold fs-4">$335<sup>.26</sup></span>
+                                <span class="text-decoration-line-through text-muted">18,990,000₫</span>
+                                <span class="fw-bold fs-4">15,192,000₫</span>
                             </div>
                         </div>
                     </div>
@@ -269,18 +273,20 @@
                 <div class="card h-100">
                     <div class="position-relative">
                         <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">BAO SSD</span>
-                        <img src="HinhSP/amd-ryzen9-7900x.jpg" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
+                        <img src="HinhSP/amd-ryzen9-7900.jpg" height="300" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">AMD Ryzen 9 7900X - Zen 4 12-Core 4.7 GHz - Socket AM5</h5>
+                        <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            AMD Ryzen 9 7900X - Zen 4 12-Core 4.7 GHz - Socket AM5
+                        </h5>
                         <p class="text-danger">Giảm 2 triệu đồng khi mua kèm màn hình LG</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <span class="badge bg-danger">Giảm 38%</span>
+                                <span class="badge bg-danger">Giảm 11%</span>
                             </div>
                             <div class="d-flex flex-column align-items-end">
-                                <span class="text-decoration-line-through text-muted">$548.99</span>
-                                <span class="fw-bold fs-4">$335<sup>.26</sup></span>
+                                <span class="text-decoration-line-through text-muted">12,390,000₫</span>
+                                <span class="fw-bold fs-4">10,990,000₫</span>
                             </div>
                         </div>
                     </div>
@@ -316,7 +322,10 @@
                                     </div>                            
                                 </div>
                                 <div class="card-body" style="width: 100%; height: 150px;">
-                                    <h3>
+                                    <h3 style="display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            -webkit-box-orient: vertical;
+                                            overflow: hidden;">
                                         <asp:LinkButton ID="LinkButton1" PostBackUrl='<%# Eval("MaSP","ChiTietSanPham.aspx?masp={0}") %>'
                                                         Text="<%# Bind('TenSP') %>" runat="server"></asp:LinkButton>
                                     </h3>
