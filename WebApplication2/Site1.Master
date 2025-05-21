@@ -96,10 +96,10 @@
        
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
-                <div class="modal-content" style="background-image:url('img/Strawberry.jpg'); background-size:cover;">
+                <div class="modal-content">
                   <div class="modal-header border-0">
                     <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
-                    <button type="button" class="btn-close text-light bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-light bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body border-0" style="opacity:0.7;">
                     Username: <asp:TextBox ID="txtUserOK" CssClass="form-control" Placeholder="Username" runat="server"></asp:TextBox><br />
