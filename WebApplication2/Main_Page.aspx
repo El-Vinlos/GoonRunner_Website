@@ -48,7 +48,7 @@
     </div>
     
     <div class="side-banner right-banner">
-        <a href="KhuyenMai.aspx">
+        <a href="SanPham.aspx?category=laptop">
             <img src="img/banner_right.jpg" alt="Khuyến mãi mùa hè" class="banner-img">
         </a>
     </div>
@@ -84,17 +84,17 @@
         <div class="row">
             <!--card 1-->    
             <div class="card mx-4" style="border: 1px solid black; width:280px; height:460px; position: relative;">
-                <a href="ChiTietSanPham.aspx?masp=SP02" style="text-decoration: none;">
+                <a href="ChiTietSanPham.aspx?masp=SP21" style="text-decoration: none;">
                     <img class="card-img-top" src="img/macbook pro 14 m2.png" alt="Card image" style="width:100%; margin-top: 10px">
                 </a>
                 <div class="card-body text-left" style="padding-bottom: 60px;">
-                    <a href="ChiTietSanPham.aspx?masp=SP02" style="text-decoration: none;">
+                    <a href="ChiTietSanPham.aspx?masp=SP21" style="text-decoration: none;">
                         <p style="color:black; font-size:1rem; 
                     display: -webkit-box;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
-                    height: 50px;">MacBook Pro 14 M2 Pro 10CPU 16GPU 16GB 512GB Silver - MPHH3SA/A</p>
+                    height: 50px;">MacBook Pro 14 M2 10CPU 16GPU 16GB 512GB Silver - MPHH3SA/A</p>
                     </a>
                     
                     <div class="specs-list my-2 text-muted" style="font-size: 0.7rem;">
@@ -217,7 +217,7 @@
                 <div class="card h-100">
                     <div class="position-relative">
                         <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">Bao SSD</span>
-                        <img src="HinhSP/amd-ryzen5-5600.jpg" height="300px" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
+                        <img src="HinhSP/amd-ryzen5-5600x.jpg" height="300px" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0">
-                        <asp:Button runat="server" ID="btnAddToCart1" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                        <asp:Button runat="server" ID="btnAddToCart1" CssClass="btn btn-danger w-100" Text="Thêm vào giỏ hàng" />
                     </div>
                 </div>
             </div>
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0">
-                        <asp:Button runat="server" ID="btnAddToCart2" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                        <asp:Button runat="server" ID="btnAddToCart2" CssClass="btn btn-danger w-100" Text="Thêm vào giỏ hàng" />
                     </div>
                 </div>
             </div>
@@ -273,7 +273,7 @@
                 <div class="card h-100">
                     <div class="position-relative">
                         <span class="badge bg-success position-absolute" style="top: 10px; left: 10px;">BAO SSD</span>
-                        <img src="HinhSP/amd-ryzen9-7900.jpg" height="300" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
+                        <img src="HinhSP/amd-ryzen9-7900x.jpg" width="300" class="card-img-top p-4" alt="AMD Ryzen 9 7900X">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
@@ -291,7 +291,7 @@
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0">
-                        <asp:Button runat="server" ID="btnAddToCart3" CssClass="btn btn-danger w-100" Text="Add to Cart" />
+                        <asp:Button runat="server" ID="btnAddToCart3" CssClass="btn btn-danger w-100" Text="Thêm vào giỏ hàng" />
                     </div>
                 </div>
             </div>
@@ -318,7 +318,7 @@
                                 <div class="d_effect" style="width: 100%; height: 320px;">
                                     <div class="d_outside">
                                         <asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Bind("MaSP") %>' />
-                                        <asp:Image ID="Image1" class="card-img-top" runat="server" CssClass="" ImageUrl="<%# Bind('Hinh','img/{0}') %>" />
+                                        <asp:Image ID="Image1" class="card-img-top" runat="server" CssClass="" ImageUrl="<%# Bind('Hinh','HinhSP/{0}') %>" />
                                     </div>                            
                                 </div>
                                 <div class="card-body" style="width: 100%; height: 150px;">

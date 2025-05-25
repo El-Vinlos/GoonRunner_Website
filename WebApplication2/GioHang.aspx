@@ -23,7 +23,7 @@
                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Hinh") %>'></asp:TextBox>
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:Image ID="Image1" style="width:100px;" runat="server" ImageUrl="<%# Bind('Hinh','../img/{0}') %>"/>
+                                <asp:Image ID="Image1" style="width:100px;" runat="server" ImageUrl="<%# Bind('Hinh','../HinhSP/{0}') %>"/>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText=" Tên sản phẩm ">
@@ -34,12 +34,12 @@
                                 <asp:Label ID="Label2" style="padding:10px;" runat="server" Text='<%# Bind("TenSP") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField HeaderText=" Size ">
+                        <asp:TemplateField HeaderText=" Thời gian bảo hành ">
                             <EditItemTemplate>
-                                <asp:TextBox ID="TextBox4" style="padding:7px;" runat="server" Text='<%# Bind("Size") %>'></asp:TextBox>
+                                <asp:TextBox ID="TextBox4" style="padding:7px;" runat="server" Text='<%# Bind("ThoiGianBaoHanh") %>'></asp:TextBox>
                             </EditItemTemplate>
                             <ItemTemplate>
-                                <asp:Label ID="Label3" style="padding:7px;" runat="server" Text='<%# Bind("Size") %>'></asp:Label>
+                                <asp:Label ID="Label3" style="padding:7px;" runat="server" Text='<%# Bind("ThoiGianBaoHanh") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText=" Giá ">

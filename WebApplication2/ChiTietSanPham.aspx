@@ -9,20 +9,20 @@
                 <ItemTemplate>
                     <div class="row">
                         <div style=" width:400px">
-                            <asp:Image ID="imgAnh" runat="server" ImageUrl="<%# Bind('Hinh','img/{0}') %>" CssClass="" Height="400px" Width="400px" />
+                            <asp:Image ID="imgAnh" runat="server" ImageUrl="<%# Bind('Hinh','HinhSP/{0}') %>" CssClass="" Height="400px" Width="400px" />
                         </div>
                         <div style="width:500px; margin-top:30px; padding-left:10px;">
                             <div>
                                 <h3>Tên: <asp:Label CssClass="text-danger" ID="MaSP" runat="server" Text="<%# Bind('TenSP') %>"></asp:Label></h3>
                             </div><br />
                             <div>
-                                <h3 class="text-dark">Màu: <asp:Label ID="Label2" CssClass="text-dark" runat="server" Text="<%# Bind('Mau') %>"></asp:Label></h3>
+                                <h3 class="text-dark">Màu: <asp:Label ID="Mau" CssClass="text-dark" runat="server" Text="<%# Bind('Mau') %>"></asp:Label></h3>
                             </div><br />
                             <div>
-                                <h3>Size: <asp:Label ID="Label3" CssClass="bg-danger text-light" style="padding:10px; border-radius:50%;" runat="server" Text="<%# Bind('Size') %>"></asp:Label></h3>
+                                <h3>Thời gian bảo hành: <asp:Label ID="ThoiGianBaoHanh" CssClass="bg-danger text-light" style="padding:10px; border-radius:50%;" runat="server" Text="<%# Bind('ThoiGianBaoHanh') %>"></asp:Label></h3>
                             </div><br />
                             <div>
-                                <h3 class="text-dark">Giá: <asp:Label ID="Label4" CssClass="text-success font-weight-bold" runat="server" Text="<%# Bind('GiaTien','{0:0,0 vnđ}') %>"></asp:Label>
+                                <h3 class="text-dark">Giá: <asp:Label ID="GiaTien" CssClass="text-success font-weight-bold" runat="server" Text="<%# Bind('GiaTien','{0:0,0 vnđ}') %>"></asp:Label>
                                 </h3>
                             </div><br />
                             <div>

@@ -33,32 +33,32 @@ namespace WebApplication2
 
         }
 
-        protected void filAll_Click(object sender, EventArgs e)
+        protected void NoFilter_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM");
             DataList1.DataBind();
         }
-        protected void filAdidas_Click(object sender, EventArgs e)
+        protected void FilterCPU_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH01");
             DataList1.DataBind();
         }
-        protected void filJordan_Click(object sender, EventArgs e)
+        protected void FilterMainboard_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH02");
             DataList1.DataBind();
         }
-        protected void filNike_Click(object sender, EventArgs e)
+        protected void FilterGPU_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH03");
             DataList1.DataBind();
         }
-        protected void filAcis_Click(object sender, EventArgs e)
+        protected void FilterPSU_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH04");
             DataList1.DataBind();
         }
-        protected void filPuma_Click(object sender, EventArgs e)
+        protected void FilterRAM_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH05");
             DataList1.DataBind();
@@ -100,13 +100,13 @@ namespace WebApplication2
             Response.Redirect(Page.Request.Url.ToString(), true);
         }
 
-        protected void filBitis_ServerClick(object sender, EventArgs e)
+        protected void FilterLAPTOP_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH06");
             DataList1.DataBind();
         }
 
-        protected void filConverse_ServerClick(object sender, EventArgs e)
+        protected void FilterKeyboard_Click(object sender, EventArgs e)
         {
             DataList1.DataSource = SQL.SelectTable("SANPHAM", "MaHang", "MH07");
             DataList1.DataBind();

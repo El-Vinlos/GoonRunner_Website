@@ -52,14 +52,14 @@
                 <div class="collapse show" id="collapseExample">
                     <div>
                         <ul class="list-group danhmuc" >
-                            <li class="list-group-item border-0" ><a class="a text-dark" runat="server" id="filAll" onserverclick="filAll_Click" href="#">TẤT CẢ</a></li>
-                            <li class="list-group-item border-0"><a class="a text-secondary" runat="server" id="filAdidas" onserverclick="filAdidas_Click" href="#">CPU</a></li>
-                            <li class="list-group-item border-0"><a class="a text-info" runat="server" id="filJordan" onserverclick="filJordan_Click" href="#">MAINBOARD</a></li>
-                            <li class="list-group-item border-0"><a class="a text-primary" runat="server" id="filNike" onserverclick="filNike_Click" href="#">GPU</a></li>
-                            <li class="list-group-item border-0"><a class="a text-success" runat="server" id="filAcis" onserverclick="filAcis_Click" href="#">PSU</a></li>
-                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filPuma" onserverclick="filPuma_Click" href="#">RAM</a></li>
-                            <li class="list-group-item border-0"><a class="a text-body" runat="server" id="filBitis" onserverclick="filBitis_ServerClick" href="#">LAPTOP</a></li>
-                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filConverse" onserverclick="filConverse_ServerClick" href="#">KEYBOARD</a></li>
+                            <li class="list-group-item border-0" ><a class="a text-dark" runat="server" id="filterAll" onserverclick="NoFilter_Click" href="#">TẤT CẢ</a></li>
+                            <li class="list-group-item border-0"><a class="a text-secondary" runat="server" id="filterCPU" onserverclick="FilterCPU_Click" href="#">CPU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-info" runat="server" id="filterMainboard" onserverclick="FilterMainboard_Click" href="#">MAINBOARD</a></li>
+                            <li class="list-group-item border-0"><a class="a text-primary" runat="server" id="filterGPU" onserverclick="FilterGPU_Click" href="#">GPU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-success" runat="server" id="filterPSU" onserverclick="FilterPSU_Click" href="#">PSU</a></li>
+                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filterRAM" onserverclick="FilterRAM_Click" href="#">RAM</a></li>
+                            <li class="list-group-item border-0"><a class="a text-body" runat="server" id="filterLAPTOP" onserverclick="FilterLAPTOP_Click" href="#">LAPTOP</a></li>
+                            <li class="list-group-item border-0"><a class="a text-warning" runat="server" id="filterKEYBOARD" onserverclick="FilterKeyboard_Click" href="#">KEYBOARD</a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <div class="card" style="width: 282px; margin-right:20px; margin-bottom:20px;">
                             <div class="d_effect" style="width: 100%; height: 330px;">
                                 <div class="d_outside">
-                                    <asp:Image ID="Image1" class="card-img-top" runat="server" CssClass="" ImageUrl="<%# Bind('Hinh','img/{0}') %>" />
+                                    <asp:Image ID="Image1" class="card-img-top" runat="server" CssClass="" ImageUrl="<%# Bind('Hinh','HinhSP/{0}') %>" />
                                     <asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Bind("MaSP") %>'/>
                                     <input id="mama" name="masp" type="hidden" value='<%# Eval("MaSP") %>' />
                                 </div>       
