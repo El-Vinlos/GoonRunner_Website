@@ -20,7 +20,7 @@ namespace WebApplication2
                 double tong=0;
 
                 // ví dụ: select TenSP, GiaTien, Size chẳng hạn
-                String query = "select MaSP, Hinh, TenSP, GiaTien, Size from SANPHAM where ";
+                String query = "select MaSP, Hinh, TenSP, GiaTien, ThoiGianBaoHanh from SANPHAM where ";
 
                 Dictionary<string, int> giohang = (Dictionary<string, int>)Session["GioHang"];
                 foreach (KeyValuePair<string, int> value in giohang)

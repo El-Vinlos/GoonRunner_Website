@@ -43,15 +43,15 @@ namespace WebApplication2
         {
             string sTenfile;
             sTenfile = fulUpHinh.FileName;
-            fulUpHinh.SaveAs(MapPath("~/img/" + sTenfile));
-            string sql = "Insert into SANPHAM (MaSP,TenSP,GiaTien,Size,Mau,Hinh,MaHang) values (@MaSP,@TenSP,@GiaTien,@Size,@Mau,@Hinh,@MaHang)";
+            fulUpHinh.SaveAs(MapPath("~/HinhSP/" + sTenfile));
+            string sql = "Insert into SANPHAM (MaSP,TenSP,GiaTien,ThoiGianBaoHanh,Mau,Hinh,MaHang) values (@MaSP,@TenSP,@GiaTien,@ThoiGianBaoHanh,@Mau,@Hinh,@MaHang)";
             
             List<SqlParameter> list = new List<SqlParameter>()
             {
                 new SqlParameter("@MaSP", txtMaSP.Text.Trim()),
                 new SqlParameter("@TenSP", txtTenSP.Text.Trim()),
                 new SqlParameter("@GiaTien", txtGiaTien.Text.Trim()),
-                new SqlParameter("@Size", txtSize.Text.Trim()),
+                new SqlParameter("@ThoiGianBaoHanh", txtThoiGianBaoHanh.Text.Trim()),
                 new SqlParameter("@Mau", txtMau.Text.Trim()),
                 new SqlParameter("@Hinh", fulUpHinh.FileName.ToString()), 
                 new SqlParameter("@MaHang", ddlHangSX.SelectedValue)
@@ -74,16 +74,16 @@ namespace WebApplication2
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    string sql1 = "update SANPHAM set TenSP=@TenSP,GiaTien=@GiaTien,Size=@Size,Mau=@Mau,Hinh=@Hinh,MaHang=@MaHang where MaSP=@MaSP";
+                    string sql1 = "update SANPHAM set TenSP=@TenSP,GiaTien=@GiaTien,Hinh=@Hinh,MaHang=@MaHang,ThoiGianBaoHanh=@ThoiGianBaoHanh,Mau=@Mau where MaSP=@MaSP";
                     List<SqlParameter> list = new List<SqlParameter>()
                     {
                         new SqlParameter("@MaSP", tex),
                         new SqlParameter("@TenSP", txtTenSP.Text.Trim()),
                         new SqlParameter("@GiaTien", txtGiaTien.Text.Trim()),
-                        new SqlParameter("@Size", txtSize.Text.Trim()),
-                        new SqlParameter("@Mau", txtMau.Text.Trim()),
+                        new SqlParameter("@ThoiGianBaoHanh", txtThoiGianBaoHanh.Text.Trim()),
                         new SqlParameter("@Hinh", ImgName.Text),
-                        new SqlParameter("@MaHang", ddlHangSX.SelectedValue)
+                        new SqlParameter("@MaHang", ddlHangSX.SelectedValue),
+                        new SqlParameter("@Mau", txtMau.Text.Trim())
                     };
                     lk.sql_parameter(sql1, list.ToArray()).ExecuteNonQuery();
                     LoadData();
@@ -93,21 +93,21 @@ namespace WebApplication2
             else
             {
 
-                string pic = Server.MapPath("img/" + ImgName.Text);
+                string pic = Server.MapPath("HinhSP/" + ImgName.Text);
 
                 FileInfo file = new FileInfo(pic);
                 if (file.Exists)
                     file.Delete();
                 string sTenfile;
                 sTenfile = fulUpHinh.FileName;
-                fulUpHinh.SaveAs(MapPath("img/" + sTenfile));
-                string sql1 = "update SANPHAM set TenSP=@TenSP,GiaTien=@GiaTien,Size=@Size,Mau=@Mau,Hinh=@Hinh,MaHang=@MaHang where MaSP=@MaSP";
+                fulUpHinh.SaveAs(MapPath("HinhSP/" + sTenfile));
+                string sql1 = "update SANPHAM set TenSP=@TenSP,GiaTien=@GiaTien,Hinh=@Hinh,MaHang=@MaHang,Mau=@Mau,ThoiGianBaoHanh=@ThoiGianBaoHanh where MaSP=@MaSP";
                 List<SqlParameter> list = new List<SqlParameter>()
                     {
                         new SqlParameter("@MaSP", tex),
                         new SqlParameter("@TenSP", txtTenSP.Text.Trim()),
                         new SqlParameter("@GiaTien", txtGiaTien.Text.Trim()),
-                        new SqlParameter("@Size", txtSize.Text.Trim()),
+                        new SqlParameter("@ThoiGianBaoHanh", txtThoiGianBaoHanh.Text.Trim()),
                         new SqlParameter("@Mau", txtMau.Text.Trim()),
                         new SqlParameter("@Hinh", ImgName.Text),
                         new SqlParameter("@MaHang", ddlHangSX.SelectedValue)
@@ -129,9 +129,9 @@ namespace WebApplication2
 
                 string sql2 = "select * from SANPHAM where MaSP='" + ma + "'";
                 DataTable dt = lk.DocTable(ma, sql2);
-                string hinh = dt.Rows[0][6].ToString();
+                string hinh = dt.Rows[0][4].ToString();
 
-                string pic = Server.MapPath("~/img/" + hinh);
+                string pic = Server.MapPath("~/HinhSP/" + hinh);
                 FileInfo file = new FileInfo(pic);
                 if (file.Exists)
                     file.Delete();

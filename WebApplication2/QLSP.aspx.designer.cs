@@ -51,13 +51,13 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.TextBox txtGiaTien;
 
         /// <summary>
-        /// txtSize control.
+        /// txtThoiGianBaoHanh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSize;
+        protected global::System.Web.UI.WebControls.TextBox txtThoiGianBaoHanh;
 
         /// <summary>
         /// txtMau control.

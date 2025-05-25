@@ -80,7 +80,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
      <div id ="parent"class="">
         <fieldset class="scheduler-border">
-            <legend class="scheduler-border text-danger">Loại trà sữa</legend>
+            <legend class="scheduler-border text-danger">Loại hàng</legend>
             <div class="form-group row">
                     <label for="example-text-input" class="col-4 col-form-label text-right">
                         Mã loại</label>

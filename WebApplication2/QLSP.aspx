@@ -12,7 +12,7 @@
             $("#txtMaSP").val('');
             $("#txtTenSP").val('');
             $("#txtGiaTien").val('');
-            $("#txtSize").val('');
+            $("#txtThoiGianBaoHanh").val('');
             $("#txtMau").val('');
             $("#ImgName").hide();
             $("#txtMaHSTrick").val('');
@@ -26,7 +26,7 @@
                 $("#txtMaSPTrick").val($("#txtMaSP").val().trim());
                 $("#txtTenSP").val($(this).closest('tr').find('td:eq(2)').html());
                 $("#txtGiaTien").val($(this).closest('tr').find('td:eq(3)').html());
-                $("#txtSize").val($(this).closest('tr').find('td:eq(4)').html());
+                $("#txtThoiGianBaoHanh").val($(this).closest('tr').find('td:eq(4)').html());
                 $("#txtMau").val($(this).closest('tr').find('td:eq(5)').html());
                 $("#btnThemsp").hide(); //ẩn
                 $("#btnLuusp").show(); //hiện
@@ -61,8 +61,8 @@
                     setPopover($("#txtGiaTien"), "Chưa nhập dữ liệu");
                     return false;
                 }
-                if ($("#txtSize").val().trim() == "") {
-                    setPopover($("#txtSize"), "Chưa nhập dữ liệu");
+                if ($("#txtThoiGianBaoHanh").val().trim() == "") {
+                    setPopover($("#txtThoiGianBaoHanh"), "Chưa nhập dữ liệu");
                     return false;
                 }
                 if ($("#txtMau").val().trim() == "") {
@@ -91,8 +91,8 @@
                     setPopover($("#txtGiaTien"), "Chưa nhập dữ liệu");
                     return false;
                 }
-                if ($("#txtSize").val().trim() == "") {
-                    setPopover($("#txtSize"), "Chưa nhập dữ liệu");
+                if ($("#txtThoiGianBaoHanh").val().trim() == "") {
+                    setPopover($("#txtThoiGianBaoHanh"), "Chưa nhập dữ liệu");
                     return false;
                 }
                 if ($("#txtMau").val().trim() == "") {
@@ -143,7 +143,7 @@
                 $("#txtMaSP").val('');
                 $("#txtTenSP").val('');
                 $("#txtGiaTien").val('');
-                $("#txtSize").val('');
+                $("#txtThoiGianBaoHanh").val('');
                 $("#txtMau").val('');
                 $("#ImgName").val('');
                 $("#txtMaHSTrick").val('');
@@ -204,9 +204,9 @@
                 </div>
                 <div class="form-group row">
                     <label for="example-text-input" class="col-4 col-form-label">
-                        Size</label>
+                        Thời gian bảo hành</label>
                     <div class="col-8">
-                        <asp:TextBox ID="txtSize" CssClass="form-control" ClientIDMode="Static" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtThoiGianBaoHanh" CssClass="form-control" ClientIDMode="Static" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -258,7 +258,7 @@
                         <asp:BoundField DataField="GiaTien" HeaderText="Giá tiền">
                             <HeaderStyle CssClass="btn-dark" />
                         </asp:BoundField>
-                        <asp:BoundField DataField="Size" HeaderText="Size">
+                        <asp:BoundField DataField="ThoiGianBaoHanh" HeaderText="Thời gian bảo hành">
                             <HeaderStyle CssClass="btn-dark" />
                         </asp:BoundField>
                         <asp:BoundField DataField="Mau" HeaderText="Màu">
@@ -266,7 +266,7 @@
                         </asp:BoundField>
                         <asp:TemplateField HeaderText="Hình">
                             <ItemTemplate>
-                                <asp:Image ID="Image1" style="width:100px;" runat="server" ImageUrl="<%# Bind('Hinh','img/{0}') %>" />
+                                <asp:Image ID="Image1" style="width:100px;" runat="server" ImageUrl="<%# Bind('Hinh','HinhSP/{0}') %>" />
                             </ItemTemplate>
                             <EditItemTemplate>
                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Hinh") %>'></asp:TextBox>

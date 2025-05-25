@@ -15,76 +15,76 @@ namespace WebApplication2
     {
 
         /// <summary>
-        /// filAll control.
+        /// filterAll control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filAll;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterAll;
 
         /// <summary>
-        /// filAdidas control.
+        /// filterCPU control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filAdidas;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterCPU;
 
         /// <summary>
-        /// filJordan control.
+        /// filterMainboard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filJordan;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterMainboard;
 
         /// <summary>
-        /// filNike control.
+        /// filterGPU control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filNike;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterGPU;
 
         /// <summary>
-        /// filAcis control.
+        /// filterPSU control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filAcis;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterPSU;
 
         /// <summary>
-        /// filPuma control.
+        /// filterRAM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filPuma;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterRAM;
 
         /// <summary>
-        /// filBitis control.
+        /// filterLAPTOP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filBitis;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterLAPTOP;
 
         /// <summary>
-        /// filConverse control.
+        /// filterKEYBOARD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor filConverse;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor filterKEYBOARD;
 
         /// <summary>
         /// DataList1 control.
