@@ -1,0 +1,304 @@
+USE [master]
+GO
+/****** Object:  Database [QLBANLK]    Script Date: 22/05/2025 3:39:51 AM ******/
+CREATE DATABASE [QLBANLK]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'QLBANLK', FILENAME = N'D:\Download\Bai_tap_nghe\Database_QLBANLK\QLBANLK.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'QLBANLK_log', FILENAME = N'D:\Download\Bai_tap_nghe\Database_QLBANLK\QLBANLK_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
+GO
+ALTER DATABASE [QLBANLK] SET COMPATIBILITY_LEVEL = 160
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [QLBANLK].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [QLBANLK] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [QLBANLK] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [QLBANLK] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [QLBANLK] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [QLBANLK] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [QLBANLK] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [QLBANLK] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [QLBANLK] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [QLBANLK] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [QLBANLK] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [QLBANLK] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [QLBANLK] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [QLBANLK] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [QLBANLK] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [QLBANLK] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [QLBANLK] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [QLBANLK] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [QLBANLK] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [QLBANLK] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [QLBANLK] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [QLBANLK] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [QLBANLK] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [QLBANLK] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [QLBANLK] SET  MULTI_USER 
+GO
+ALTER DATABASE [QLBANLK] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [QLBANLK] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [QLBANLK] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [QLBANLK] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [QLBANLK] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [QLBANLK] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+ALTER DATABASE [QLBANLK] SET QUERY_STORE = ON
+GO
+ALTER DATABASE [QLBANLK] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
+GO
+USE [QLBANLK]
+GO
+/****** Object:  Table [dbo].[CTHOADON]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CTHOADON](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[USERNAME] [varchar](10) NOT NULL,
+	[MaSP] [varchar](10) NULL,
+	[SoLuong] [int] NULL,
+	[GiaTien] [numeric](9, 0) NULL,
+	[TrangThai] [bit] NULL,
+ CONSTRAINT [PK_CTHOADON] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[HINHSANPHAM]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[HINHSANPHAM](
+	[Hinh1] [nvarchar](255) NOT NULL,
+	[Hinh2] [nvarchar](255) NULL,
+	[Hinh3] [nvarchar](255) NULL,
+	[Hinh4] [nvarchar](255) NULL,
+	[MaSP] [varchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[HOADON]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[HOADON](
+	[MAHD] [int] IDENTITY(1,1) NOT NULL,
+	[USERNAME] [varchar](10) NOT NULL,
+	[TongTien] [numeric](18, 0) NOT NULL,
+	[Ngay] [datetime] NOT NULL,
+ CONSTRAINT [PK_HOADON] PRIMARY KEY CLUSTERED 
+(
+	[MAHD] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[MAHANGSANPHAM]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[MAHANGSANPHAM](
+	[MaHang] [varchar](10) NOT NULL,
+	[TenHang] [nvarchar](20) NULL,
+ CONSTRAINT [PK_MAHANGSANPHAM] PRIMARY KEY CLUSTERED 
+(
+	[MaHang] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[SANPHAM]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SANPHAM](
+	[MaSP] [varchar](10) NOT NULL,
+	[TenSP] [nvarchar](300) NULL,
+	[GiaTien] [numeric](9, 0) NULL,
+	[Size] [nvarchar](5) NULL,
+	[Mau] [nvarchar](20) NULL,
+	[Hinh] [nvarchar](255) NULL,
+	[MaHang] [varchar](10) NOT NULL,
+ CONSTRAINT [PK_SANPHAM_1] PRIMARY KEY CLUSTERED 
+(
+	[MaSP] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[TAIKHOAN]    Script Date: 22/05/2025 3:39:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TAIKHOAN](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[USERNAME] [varchar](50) NOT NULL,
+	[PASSWORD] [varchar](50) NULL,
+	[EMAIL] [nvarchar](30) NULL,
+	[PHONE] [varchar](10) NULL,
+	[ADDRESS] [nvarchar](100) NULL,
+ CONSTRAINT [PK_TAIKHOAN] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC,
+	[USERNAME] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[CTHOADON] ON 
+
+drop table CTHOADON
+drop table HINHSANPHAM
+drop table HOADON
+drop table MAHANGSANPHAM
+drop table SANPHAM
+drop table TAIKHOAN
+
+INSERT [dbo].[CTHOADON] ([ID], [USERNAME], [MaSP], [SoLuong], [GiaTien], [TrangThai]) VALUES (1, N'guest', N'SP06', 1, CAST(1500000 AS Numeric(9, 0)), 0)
+INSERT [dbo].[CTHOADON] ([ID], [USERNAME], [MaSP], [SoLuong], [GiaTien], [TrangThai]) VALUES (2, N'guest', N'SP06', 1, CAST(1500000 AS Numeric(9, 0)), 0)
+INSERT [dbo].[CTHOADON] ([ID], [USERNAME], [MaSP], [SoLuong], [GiaTien], [TrangThai]) VALUES (3, N'guest', N'SP04', 1, CAST(3200000 AS Numeric(9, 0)), 0)
+INSERT [dbo].[CTHOADON] ([ID], [USERNAME], [MaSP], [SoLuong], [GiaTien], [TrangThai]) VALUES (4, N'guest', N'SP06', 1, CAST(1500000 AS Numeric(9, 0)), 0)
+SET IDENTITY_INSERT [dbo].[CTHOADON] OFF
+GO
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'intel-core-i9-13900k.png', NULL, NULL, NULL, N'SP01')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'amd-ryzen9-7950x.png', NULL, NULL, NULL, N'SP02')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Mainboard ASUS ROG Strix Z790-E.png', NULL, NULL, NULL, N'SP03')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Mainboard MSI MAG B660M Mortar.png', NULL, NULL, NULL, N'SP04')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'RAM Corsair Vengeance 32GB DDR5.png', NULL, NULL, NULL, N'SP05')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'RAM Kingston Fury 16GB DDR4.png', NULL, NULL, NULL, N'SP06')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Card đồ họa ASUS TUF RTX 4070 Ti.png', NULL, NULL, NULL, N'SP07')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'NVIDIA GeForce RTX 4080.png', NULL, NULL, NULL, N'SP08')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Card đồ họa NVIDIA RTX 4090.png', NULL, NULL, NULL, N'SP09')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Card đồ họa AMD Radeon RX 7900 XTX.png', NULL, NULL, NULL, N'SP10')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Nguồn Corsair RM1000e 1000W.png', NULL, NULL, NULL, N'SP11')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'MSI MPG A1000G 1000W.png', NULL, NULL, NULL, N'SP12')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Kingston Fury 32GB DDR5.png', NULL, NULL, NULL, N'SP13')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Logitech G913 TKL Lightspeed Wireless Clicky.png', NULL, NULL, NULL, N'SP14')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Bàn phím cơ Keychron K8 Pro.png', NULL, NULL, NULL, N'SP15')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Laptop Dell XPS 15.png', NULL, NULL, NULL, N'SP16')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Intel Core i7-13700K.png', NULL, NULL, NULL, N'SP17')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'AMD Ryzen 7 7700X.png', NULL, NULL, NULL, N'SP18')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'Mainboard Gigabyte B760 AORUS ELITE AX.png', NULL, NULL, NULL, N'SP19')
+INSERT [dbo].[HINHSANPHAM] ([Hinh1], [Hinh2], [Hinh3], [Hinh4], [MaSP]) VALUES (N'RAM G.Skill Trident Z5 32GB DDR5.png', NULL, NULL, NULL, N'SP20')
+GO
+SET IDENTITY_INSERT [dbo].[HOADON] ON 
+
+INSERT [dbo].[HOADON] ([MAHD], [USERNAME], [TongTien], [Ngay]) VALUES (2, N'guest', CAST(1500000 AS Numeric(18, 0)), CAST(N'2018-04-05T16:42:36.237' AS DateTime))
+INSERT [dbo].[HOADON] ([MAHD], [USERNAME], [TongTien], [Ngay]) VALUES (4, N'guest', CAST(1500000 AS Numeric(18, 0)), CAST(N'2018-04-05T16:44:19.577' AS DateTime))
+INSERT [dbo].[HOADON] ([MAHD], [USERNAME], [TongTien], [Ngay]) VALUES (5, N'guest', CAST(3200000 AS Numeric(18, 0)), CAST(N'2018-04-05T16:45:00.580' AS DateTime))
+INSERT [dbo].[HOADON] ([MAHD], [USERNAME], [TongTien], [Ngay]) VALUES (6, N'guest', CAST(1500000 AS Numeric(18, 0)), CAST(N'2018-04-06T16:37:17.903' AS DateTime))
+SET IDENTITY_INSERT [dbo].[HOADON] OFF
+GO
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH01', N'CPU')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH02', N'MAINBOARD')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH03', N'GPU')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH04', N'PSU')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH05', N'RAM')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH06', N'LAPTOP')
+INSERT [dbo].[MAHANGSANPHAM] ([MaHang], [TenHang]) VALUES (N'MH07', N'KEYBOARD')
+GO
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP01', N'Intel Core i9-13900K', CAST(14500000 AS Numeric(9, 0)), N'40', N'Trắng', N'intel-core-i9-13900k.png', N'MH01')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP02', N'AMD Ryzen 9 7950X', CAST(15000000 AS Numeric(9, 0)), N'40', N'Vàng cam', N'amd-ryzen9-7950x.png', N'MH01')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP03', N'Mainboard ASUS ROG Strix Z790-E', CAST(9000000 AS Numeric(9, 0)), N'40', N'Trắng và hồng', N'Mainboard ASUS ROG Strix Z790-E.png', N'MH02')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP04', N'Mainboard MSI MAG B660M Mortar', CAST(4500000 AS Numeric(9, 0)), N'40', N'Trắng và đỏ hồng', N'Mainboard MSI MAG B660M Mortar.png', N'MH02')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP05', N'RAM Corsair Vengeance 32GB DDR5', CAST(4800000 AS Numeric(9, 0)), N'40', N'Trắng và đen', N'RAM Corsair Vengeance 32GB DDR5.png', N'MH05')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP06', N'RAM Kingston Fury 16GB DDR4', CAST(2100000 AS Numeric(9, 0)), N'40', N'Tím', N'RAM Kingston Fury 16GB DDR4.png', N'MH05')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP07', N'Card đồ họa ASUS TUF RTX 4070 Ti', CAST(7500000 AS Numeric(9, 0)), N'40', N'Xanh lá', N'Card đồ họa ASUS TUF RTX 4070 Ti.png', N'MH03')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP08', N'NVIDIA GeForce RTX 4080', CAST(4500000 AS Numeric(9, 0)), N'40', N'Nâu trắng', N'NVIDIA GeForce RTX 4080.png', N'MH03')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP09', N'Card đồ họa NVIDIA RTX 4090', CAST(50000000 AS Numeric(9, 0)), N'40', N'Nâu đen', N'Card đồ họa NVIDIA RTX 4090.png', N'MH03')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP10', N'Card đồ họa AMD Radeon RX 7900 XTX', CAST(37000000 AS Numeric(9, 0)), N'42', N'Trắng vàng, hồng đỏ', N'Card đồ họa AMD Radeon RX 7900 XTX.png', N'MH03')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP11', N'Nguồn Corsair RM1000e 1000W', CAST(3800000 AS Numeric(9, 0)), N'40', N'Cam nâu', N'Nguồn Corsair RM1000e 1000W.png', N'MH04')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP12', N'MSI MPG A1000G 1000W', CAST(2500000 AS Numeric(9, 0)), N'40', N'Cam', N'MSI MPG A1000G 1000W.png', N'MH04')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP13', N'Kingston Fury 32GB DDR5', CAST(18000000 AS Numeric(9, 0)), N'40', N'Xanh dương', N'Kingston Fury 32GB DDR5.png', N'MH05')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP14', N'Logitech G913 TKL Lightspeed Wireless Clicky', CAST(13500000 AS Numeric(9, 0)), N'40', N'Nâu', N'Logitech G913 TKL Lightspeed Wireless Clicky.png', N'MH07')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP15', N'Bàn phím cơ Keychron K8 Pro', CAST(3200000 AS Numeric(9, 0)), N'40', N'Hồng đỏ', N'Bàn phím cơ Keychron K8 Pro.png', N'MH07')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP16', N'Laptop Dell XPS 15', CAST(35000000 AS Numeric(9, 0)), N'40', N'Hồng đỏ', N'Laptop Dell XPS 15.png', N'MH06')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP17', N'Intel Core i7-13700K', CAST(12500000 AS Numeric(9, 0)), N'40', N'Nâu nhạt', N'Intel Core i7-13700K.png', N'MH01')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP18', N'AMD Ryzen 7 7700X', CAST(10000000 AS Numeric(9, 0)), N'40', N'Xanh lá', N'AMD Ryzen 7 7700X.png', N'MH01')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP19', N'Mainboard Gigabyte B760 AORUS ELITE AX', CAST(6500000 AS Numeric(9, 0)), N'40', N'Hồng', N'Mainboard Gigabyte B760 AORUS ELITE AX.png', N'MH02')
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [Size], [Mau], [Hinh], [MaHang]) VALUES (N'SP20', N'RAM G.Skill Trident Z5 32GB DDR5', CAST(5500000 AS Numeric(9, 0)), N'40', N'Nâu nhạt', N'RAM G.Skill Trident Z5 32GB DDR5.png', N'MH05')
+
+INSERT [dbo].[SANPHAM] ([MaSP], [TenSP], [GiaTien], [ThoiGianBaoHanh], [Mau], [Hinh], [MaHang]) VALUES (N'SP21', N'MacBook Pro 14 M2 Pro 10CPU 16GPU 16GB 512GB Silver - MPHH3SA/A', CAST(48590000 AS Numeric(9, 0)), N'36', N'Xám', N'macbook pro 14 m2.png', N'MH05')
+GO
+SET IDENTITY_INSERT [dbo].[TAIKHOAN] ON 
+
+INSERT [dbo].[TAIKHOAN] ([ID], [USERNAME], [PASSWORD], [EMAIL], [PHONE], [ADDRESS]) VALUES (1, N'guest', N'123', N'guest@gmail.com', N'0124587963', N'123 asd jhfdjhfd')
+INSERT [dbo].[TAIKHOAN] ([ID], [USERNAME], [PASSWORD], [EMAIL], [PHONE], [ADDRESS]) VALUES (2, N'Admin', N'123456', N'admin@gmail.com', N'0123654789', N'5615 dasdas')
+SET IDENTITY_INSERT [dbo].[TAIKHOAN] OFF
+GO
+ALTER TABLE [dbo].[HINHSANPHAM]  WITH CHECK ADD  CONSTRAINT [FK_HINHSANPHAM_SANPHAM] FOREIGN KEY([MaSP])
+REFERENCES [dbo].[SANPHAM] ([MaSP])
+GO
+ALTER TABLE [dbo].[HINHSANPHAM] CHECK CONSTRAINT [FK_HINHSANPHAM_SANPHAM]
+GO
+ALTER TABLE [dbo].[SANPHAM]  WITH CHECK ADD  CONSTRAINT [FK_SANPHAM_MAHANGSANPHAM] FOREIGN KEY([MaHang])
+REFERENCES [dbo].[MAHANGSANPHAM] ([MaHang])
+GO
+ALTER TABLE [dbo].[SANPHAM] CHECK CONSTRAINT [FK_SANPHAM_MAHANGSANPHAM]
+GO
+USE [master]
+GO
+ALTER DATABASE [QLBANLK] SET  READ_WRITE  
+GO
+
+alter table SANPHAM
+drop column Mau 
+
+ALTER TABLE SANPHAM
+ADD Mau nvarchar(20);
+
+DECLARE @TenSP NVARCHAR(100) = 'Intel Core i9-13900K',
+        @GiaTien DECIMAL(18,2) = 14500000,
+        @Hinh NVARCHAR(255) = 'intel-core-i9-13900k.png',
+        @MaHang NVARCHAR(50) = 'MH01',
+        @Mau NVARCHAR(50) = 'Xám-xanh',
+        @ThoiGianBaoHanh INT = 32,
+        @MaSP NVARCHAR(50) = 'SP01';
+
+UPDATE SANPHAM
+SET 
+    TenSP = @TenSP,
+    GiaTien = @GiaTien,
+    Hinh = @Hinh,
+    MaHang = @MaHang,
+    Mau = @Mau,
+    ThoiGianBaoHanh = @ThoiGianBaoHanh
+WHERE 
+    MaSP = @MaSP;
